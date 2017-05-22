@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.fgfg.MainActivity" >
+
+    <EditText
+        android:id="@+id/w1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="192.168.1.100" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/b1"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/w1"
+        android:layout_alignBottom="@+id/w1"
+        android:layout_alignParentLeft="true"
+        android:text="服务器地址:" />
+
+    <TextView
+        android:id="@+id/b2"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/b1"
+        android:layout_below="@+id/b1"
+        android:layout_marginTop="46dp"
+        android:text="端口号:" />
+
+    <EditText
+        android:id="@+id/w2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b2"
+        android:layout_toRightOf="@+id/b2"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="10020" />
+
+    <Button
+        android:id="@+id/a2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="发送信息" />
+
+    <EditText
+        android:id="@+id/w3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:height="80dp" />
+
+    <Button
+        android:id="@+id/a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/w3"
+        android:layout_below="@+id/b2"
+        android:layout_marginTop="24dp"
+        android:text="连接服务器" />
+
+    <Button
+        android:id="@+id/a3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/a1"
+        android:layout_alignBottom="@+id/a1"
+        android:layout_alignLeft="@+id/b2"
+        android:text="关闭" />
+
+</RelativeLayout>
